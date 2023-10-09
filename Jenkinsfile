@@ -12,7 +12,7 @@ pipeline {
         stage('Compile') {
             steps {
                 // Compile the C file (replace 'your_c_file.c' with the actual filename).
-                sh 'gcc -o your_program print.c'
+                sh 'gcc print.c -o print'
             }
         }
 
